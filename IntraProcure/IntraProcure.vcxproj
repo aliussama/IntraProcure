@@ -1,0 +1,267 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.Windows.CppWinRT.2.0.220531.1\build\native\Microsoft.Windows.CppWinRT.props" Condition="Exists('..\packages\Microsoft.Windows.CppWinRT.2.0.220531.1\build\native\Microsoft.Windows.CppWinRT.props')" />
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <ProjectGuid>{F9F4E19B-8078-CBBF-C839-8FF783369B43}</ProjectGuid>
+    <TargetFrameworkVersion>v4.8.1</TargetFrameworkVersion>
+    <Keyword>ManagedCProj</Keyword>
+    <RootNamespace>IntraProcure</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <ApplicationIcon>Resources\AppIcon.ico</ApplicationIcon>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies />
+      <SubSystem>Windows</SubSystem>
+      <EntryPointSymbol>main</EntryPointSymbol>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies />
+      <SubSystem>Windows</SubSystem>
+      <EntryPointSymbol>main</EntryPointSymbol>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies />
+      <SubSystem>Windows</SubSystem>
+      <EntryPointSymbol>main</EntryPointSymbol>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies />
+      <SubSystem>Windows</SubSystem>
+      <EntryPointSymbol>main</EntryPointSymbol>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="SiticoneNetFrameworkUI">
+      <HintPath>..\..\..\..\..\..\Libraries\Siticone\net48\SiticoneNetFrameworkUI.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ForgotPasswordForm.cpp" />
+    <ClCompile Include="HomeForm.cpp" />
+    <ClCompile Include="InventoryForm.cpp" />
+    <ClCompile Include="LoginForm.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="MainForm.cpp" />
+    <ClCompile Include="ManagerPanelForm.cpp" />
+    <ClCompile Include="MyRequestsForm.cpp" />
+    <ClCompile Include="ProductCardControl.cpp" />
+    <ClCompile Include="ProfileForm.cpp" />
+    <ClCompile Include="RegisterForm.cpp" />
+    <ClCompile Include="RequestCartForm.cpp" />
+    <ClCompile Include="SuppliersForm.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CartManager.h" />
+    <ClInclude Include="Config.h" />
+    <ClInclude Include="DatabaseManager.h" />
+    <ClInclude Include="Employee.h" />
+    <ClInclude Include="EmployeeManager.h" />
+    <ClInclude Include="ForgotPasswordForm.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="HomeForm.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="InventoryForm.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="InventoryManager.h" />
+    <ClInclude Include="LoginForm.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="MainForm.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="ManagerPanelForm.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="MyRequestsForm.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Product.h" />
+    <ClInclude Include="ProductCardControl.h">
+      <FileType>CppControl</FileType>
+    </ClInclude>
+    <ClInclude Include="ProductManager.h" />
+    <ClInclude Include="ProfileForm.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="RegisterForm.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Request.h" />
+    <ClInclude Include="RequestCartForm.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="RequestCartManager.h" />
+    <ClInclude Include="RequestItem.h" />
+    <ClInclude Include="RequestManager.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="Session.h" />
+    <ClInclude Include="Supplier.h" />
+    <ClInclude Include="SupplierManager.h" />
+    <ClInclude Include="SuppliersForm.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="UiStyler.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ForgotPasswordForm.resx">
+      <DependentUpon>ForgotPasswordForm.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HomeForm.resx">
+      <DependentUpon>HomeForm.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InventoryForm.resx">
+      <DependentUpon>InventoryForm.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManagerPanelForm.resx">
+      <DependentUpon>ManagerPanelForm.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyRequestsForm.resx">
+      <DependentUpon>MyRequestsForm.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductCardControl.resx">
+      <DependentUpon>ProductCardControl.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProfileForm.resx">
+      <DependentUpon>ProfileForm.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegisterForm.resx">
+      <DependentUpon>RegisterForm.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RequestCartForm.resx">
+      <DependentUpon>RequestCartForm.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SuppliersForm.resx">
+      <DependentUpon>SuppliersForm.h</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\..\..\..\Libraries\Siticone\net48\SiticoneNetFrameworkUI.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Resources.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\..\..\..\Downloads\AppIcon.ico" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="..\packages\Microsoft.Windows.CppWinRT.2.0.220531.1\build\native\Microsoft.Windows.CppWinRT.targets" Condition="Exists('..\packages\Microsoft.Windows.CppWinRT.2.0.220531.1\build\native\Microsoft.Windows.CppWinRT.targets')" />
+  </ImportGroup>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Windows.CppWinRT.2.0.220531.1\build\native\Microsoft.Windows.CppWinRT.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Windows.CppWinRT.2.0.220531.1\build\native\Microsoft.Windows.CppWinRT.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.Windows.CppWinRT.2.0.220531.1\build\native\Microsoft.Windows.CppWinRT.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Windows.CppWinRT.2.0.220531.1\build\native\Microsoft.Windows.CppWinRT.targets'))" />
+  </Target>
+</Project>

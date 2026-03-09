@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Forms">
+      <UniqueIdentifier>{d373cf59-4cb0-4221-9eb4-f6c320bc6cc8}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="HomeForm.cpp">
+      <Filter>Forms</Filter>
+    </ClCompile>
+    <ClCompile Include="RequestCartForm.cpp">
+      <Filter>Forms</Filter>
+    </ClCompile>
+    <ClCompile Include="ManagerPanelForm.cpp">
+      <Filter>Forms</Filter>
+    </ClCompile>
+    <ClCompile Include="MainForm.cpp">
+      <Filter>Forms</Filter>
+    </ClCompile>
+    <ClCompile Include="LoginForm.cpp">
+      <Filter>Forms</Filter>
+    </ClCompile>
+    <ClCompile Include="ProductCardControl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RegisterForm.cpp">
+      <Filter>Forms</Filter>
+    </ClCompile>
+    <ClCompile Include="MyRequestsForm.cpp">
+      <Filter>Forms</Filter>
+    </ClCompile>
+    <ClCompile Include="ProfileForm.cpp">
+      <Filter>Forms</Filter>
+    </ClCompile>
+    <ClCompile Include="ForgotPasswordForm.cpp">
+      <Filter>Forms</Filter>
+    </ClCompile>
+    <ClCompile Include="SuppliersForm.cpp">
+      <Filter>Forms</Filter>
+    </ClCompile>
+    <ClCompile Include="InventoryForm.cpp">
+      <Filter>Forms</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DatabaseManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Product.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Employee.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Request.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RequestItem.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ProductManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="EmployeeManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RequestManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="HomeForm.h">
+      <Filter>Forms</Filter>
+    </ClInclude>
+    <ClInclude Include="RequestCartForm.h">
+      <Filter>Forms</Filter>
+    </ClInclude>
+    <ClInclude Include="ManagerPanelForm.h">
+      <Filter>Forms</Filter>
+    </ClInclude>
+    <ClInclude Include="MainForm.h">
+      <Filter>Forms</Filter>
+    </ClInclude>
+    <ClInclude Include="LoginForm.h">
+      <Filter>Forms</Filter>
+    </ClInclude>
+    <ClInclude Include="UiStyler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RegisterForm.h">
+      <Filter>Forms</Filter>
+    </ClInclude>
+    <ClInclude Include="MyRequestsForm.h">
+      <Filter>Forms</Filter>
+    </ClInclude>
+    <ClInclude Include="ProfileForm.h">
+      <Filter>Forms</Filter>
+    </ClInclude>
+    <ClInclude Include="ForgotPasswordForm.h">
+      <Filter>Forms</Filter>
+    </ClInclude>
+    <ClInclude Include="Session.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CartManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ProductCardControl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SuppliersForm.h">
+      <Filter>Forms</Filter>
+    </ClInclude>
+    <ClInclude Include="InventoryForm.h">
+      <Filter>Forms</Filter>
+    </ClInclude>
+    <ClInclude Include="Supplier.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SupplierManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="InventoryManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RequestCartManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\..\..\..\Libraries\Siticone\net48\SiticoneNetFrameworkUI.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resource.resx">
+      <Filter>Resource Files</Filter>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Resources.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\..\..\..\Downloads\AppIcon.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+</Project>
